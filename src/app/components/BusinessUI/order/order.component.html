@@ -1,0 +1,50 @@
+    
+    <app-spinner-component *ngIf="spnValue != 0" style="
+position: absolute;
+height: auto;
+width: 100%;"></app-spinner-component>
+<app-business-top></app-business-top>
+<div class="holder">
+  <h2><b>Orders</b></h2>
+    <div class="order-holder">
+
+    <div *ngFor="let orderDe of Maporders.entries()" (click)="OpenOrder(orderDe[0])" class="order">
+
+        <p class="order-number"># {{orderDe[0]}}</p>
+        <hr>
+        <div class="same-line">
+        <label>Quantity:</label>
+        <p class="info">{{orderDe[1].quantity}}</p>
+                    </div>
+<div class="same-line">
+        <label>Date:</label>
+        <p class="info">{{orderDe[1].order.date}}</p>
+    </div>
+    <div class="same-line">
+      <label>Total:</label>
+          <b><p class="info">{{orderDe[1].Total | currency: 'R'}}</p></b>
+          </div>
+          <hr>
+        <div class="same-line">
+              <label>Status:</label>
+        <p class="info it">{{orderDe[1].order.order_status}}</p>
+          </div>
+
+    
+      </div>
+  </div>
+
+<div class="invi">
+
+</div>
+
+    <!-- <div class="card">
+        <p class="font2 mb-1"><b>Get Order Upates</b></p>
+        <p class="font-w mb-1">Track updates with Makasana Wallet</p>
+    </div> -->
+
+<!-- Nav-bar -->
+
+
+</div>
+<app-bottom-nav></app-bottom-nav>

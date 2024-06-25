@@ -1,0 +1,60 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<app-business-top></app-business-top>
+<div class="container">
+  <div class="card containe p-2 mt-4">
+    <div *ngFor="let orderDe of order, index as i" class="order">
+
+        <hr>
+        <div class="same-line2">
+            <label>{{i+1}}</label>
+        <p class="order-number">{{orderDe.orderNo}}</p>
+        </div>
+        <hr>+
+        <div class="same-line">
+            <label>Title:</label>
+            <p class="info">{{orderDe.title}}</p>
+        </div>
+        <div class="same-line">
+        <label>Quantity:</label>
+        <p class="info">{{orderDe.quantity}}</p>
+        </div>
+        <div class="same-line">
+        <label>Date:</label>
+        <p class="info">{{orderDe.date}}</p>
+        </div>
+        <div class="same-line">
+        <label>Total:</label>
+        <b><p class="info">{{orderDe.price | currency: 'R'}}</p></b>
+        </div>
+        <div class="same-line">
+        <label>Status:</label>
+        <p class="info it">{{orderDe.order_status}}</p>
+        </div>
+        
+    </div>
+<br/>
+        <div class="form-group ">
+      
+      <select id="progress" required type="text"  placeholder="Order progress"  class="form-control" name="progress" >
+
+        <option value="Busy">In Progress</option>
+        <option value="Out">Out for delivery</option>
+        <option value="Collect">Ready for collection</option>
+
+      </select>
+    </div>
+
+</div>
+<br/>
+
+
+    <button type="submit">Change customer order state</button>
+
+    <app-bottom-nav></app-bottom-nav>
+
+
+ 
+
+              

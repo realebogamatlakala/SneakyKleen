@@ -1,0 +1,71 @@
+<div class="holder">
+    <p>Your Progress</p>
+    <mat-progress-bar *ngIf="blLoadComplete" mode="indeterminate"></mat-progress-bar>
+
+    <div class="item">
+        <label class="lblheader">Total Available Products</label>
+        <p  class="tit">
+            {{MaxProduct}}
+        </p>
+        <div class="lblStatus">
+            <label class="status">Status:</label><label>{{Prod_status | uppercase}}</label>
+        </div>
+    </div>
+
+    <div class="item-chart">
+        <label class="lblheader">Montly Product Sales</label>
+        <canvas class="graph" id="graph">
+
+        </canvas>
+    </div>
+
+    <div>
+        <label>Orders This Month</label>
+        <br>
+        <div class="item-chart">
+            <p  class="tit">
+                {{MaxSalesMonth}}
+            </p>
+
+        </div>
+        <br>
+        Overall
+    <div class="thr">
+        
+        <div class="item-chart">
+            <label class="lblheader">Completed</label>
+            <p  class="tit">
+                {{OrderCompleted}}
+            </p>
+        </div>
+        <div class="item-chart">
+            <label class="lblheader">Rejected</label>
+            <p  class="tit">
+                {{OrderRejected}}
+            </p>
+        </div>
+        <div class="item-chart">
+            <label class="lblheader">Pending</label>
+            <p  class="tit">
+                {{OrderPending}}
+            </p>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+
+    <div class="item">
+        <label class="lblheader">Most Selling</label>
+        <div class="daa">
+            <img *ngIf="MostSellingProduct.image" src="{{MostSellingProduct.image}}"/>
+            <p class="tite">
+                {{MostSellingProduct.title}}
+            </p>
+        </div>
+    </div>
+    
+</div>
+
+<app-bottom-nav></app-bottom-nav>

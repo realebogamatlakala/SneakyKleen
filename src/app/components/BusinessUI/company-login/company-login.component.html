@@ -1,0 +1,82 @@
+<div class="holder">
+
+  <div class="holder2">
+    <div class="header">
+      <h1 >Login to your Business Account</h1>
+    </div>
+
+    <div class="login-div">
+      <div class="form-group" id="email">
+        <label class="emailInput" for="email">Email :</label>
+        <input type="email" name=" company_email" class="form-control" [(ngModel)]="form.email" required placeholder="Company Email" id="emailInput">
+      </div>
+
+      <div class="form-group" id="password">
+        <label class="passwordInput" for="password">Password :</label>
+        <input type="password" name="password" class="form-control" [(ngModel)]="form.password" required placeholder="Password" id="passwordInput">
+      </div>
+
+      <button class="submit"  type="submit" (click)="mSignIn()">Login</button>
+
+      <div class="btt">
+        <h5>Don't have an account? <b><a routerLink="/company-signup" id="loginName"> Register </a></b></h5>
+        <h5><b><a routerLink="/user-login" id="loginName">Customer?</a></b> sign in</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+</div>
+
+<button class="spn" *ngIf="spnValue != 0">
+  <mat-spinner style="width: 50px; height: 50px;" mode="indeterminate" class="spinner"></mat-spinner>
+</button>
+
+
+</div>
+
+
+<!-- <div class="holder">
+
+    <h1 class="login">Login to your Business Account</h1>
+<form name="form" >
+
+    <div class="fo" id="email">
+      <label class="emailInput" for="email">Email :</label>
+      <input type="text" name=" company_email" class="form-control" placeholder="Company Email" id="emailInput">
+    </div>
+
+    <div class="form-group" id="password">
+       <label class="passwordInput" for="password">Password :</label>
+       <input type="password" name="password" class="form-control" placeholder="Password" id="passwordInput">
+    </div>
+
+
+    <button class="submit" routerLink="/dashboard" type="submit">login</button>
+
+    <button class="sub" routerLink="/home">Customer</button>
+
+
+    <h5>Don't have an account? <a routerLink="/company-signup" id="loginName"> Register </a></h5>
+
+  </form>
+
+   <div class="container">
+  <h2 class="com">Welcome back</h2>
+</div>
+</div> -->
+
+
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div #toastElement class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Welcome Back To Makasana</strong>
+      <button type="button" class="btn-close" (click)="hideToast()" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Login successful! Welcome to our community.    </div>
+  </div>
+</div>
+
+

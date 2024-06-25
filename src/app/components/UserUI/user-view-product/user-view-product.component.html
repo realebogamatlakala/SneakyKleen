@@ -1,0 +1,133 @@
+
+<div class="holder">
+    <div class="top-bar">
+        <img onclick="window.history.go(-1)" src="../../../../assets/images/back-svgrepo-com.svg" alt="" style="width: 30px; height: 30px;">
+
+        <button  routerLink="/your-cart"><mat-icon [matBadge]="cartCount" matBadgeColor="warn">shopping_cart</mat-icon>
+            <!-- Include text description of the icon's meaning for screen-readers -->
+            <span class="cdk-visually-hidden">
+              Example with a home icon with overlaid badge showing the number 15
+            </span>
+        </button>
+
+    </div>
+    <!-- <div class="btnSave">
+        <button><mat-icon>edit</mat-icon></button>
+    </div> -->
+
+    <div class="details-holder">
+        <div class="image-view">
+            <img src="{{product.image}}"/>
+            <!-- <img src="https://images.samsung.com/is/image/samsung/p6pim/za/rb30j3611sa-fa/gallery/za-bottom-freezer-303l-rb30j3611sa-fa-536308508?$2160_1728_PNG$"/> -->
+        </div>
+
+        <div class="action-btn">
+            <button type="button" (click)="mLike()" [class]="liked"><mat-icon>favorite</mat-icon></button>
+            <button *ngIf="product.quantity != 0" (click)="mAddToCart(product)" type="button"><mat-icon>{{icon}}</mat-icon></button>
+        </div>
+
+        <div *ngIf="product.promo.onPromo" class="promo">
+            <p>
+                Promotion
+            </p>
+
+        </div>
+
+        <div class="prod-options">
+            <div class="business">
+                <label>Sold by</label>
+                <p routerLink="/products/{{product.business.name}}/{{product.business._id}}">{{product.business.name | titlecase}}</p>
+            </div>
+        </div>
+
+        <div class="input-fieldD">
+            <div class="prices-product">
+                <p *ngIf="product.promo.onPromo" class="lblOld">{{product.price | currency: 'R'}}</p>
+                <p *ngIf="product.promo.onPromo" class="price">{{product.promo.newPrice | currency: 'R'}}</p>
+                <p *ngIf="!product.promo.onPromo" class="price">{{product.price | currency: 'R'}}</p>
+
+            </div>
+            
+        </div>
+
+        <div class="input-fieldD">
+            <hr> 
+            <div class="input-fieldD">
+                <label>Product Title</label>
+            </div>
+
+            <p>{{product.title}}</p>
+            
+        </div>
+
+        <div class="input-fieldD">
+            <hr>
+            <label>Product Description</label>
+            <p>
+                {{product.description}}
+            </p>
+              </div>
+
+        <div class="input-fieldD">
+            <hr>
+            <label>Product Condition</label>
+            <p>New</p>
+        </div>
+        <div class="tra">
+
+        </div> 
+    </div>
+
+    <div class="bottom-nav">
+
+        <div class="nav-options" >
+      
+            <div class="nav-item">
+                <button routerLink="/home"><mat-icon>store</mat-icon></button>
+                <label>Categories</label>
+            </div>
+      
+            <div class="nav-item">
+                <button routerLink="/track-order"><mat-icon>assignment</mat-icon></button>
+                <label>Orders</label>
+               
+            </div>
+      
+            <!-- <div class="nav-item">
+                <button routerLink="/home"><mat-icon>category</mat-icon></button>
+                
+            </div> -->
+      
+            <!-- <div class="nav-item">
+                <button><mat-icon>launch</mat-icon></button>
+                
+            </div> -->
+      
+            <div class="nav-item">
+                <button routerLink="/consumer-profile"><mat-icon>account_circle</mat-icon></button>
+                <label>Profile</label>
+                
+            </div>
+      
+            <div class="nav-item">
+              <button routerLink="/makasana"><mat-icon>logout</mat-icon></button>
+              <label>Logout</label>
+      
+          </div>
+      
+        </div>
+            
+      </div>
+
+</div>    
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div #toastElement class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Makasana</strong>
+        <button type="button" class="btn-close" (click)="hideToast()" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Item added cart successfully!. </div>
+    </div>
+  </div>

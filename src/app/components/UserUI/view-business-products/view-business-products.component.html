@@ -1,0 +1,139 @@
+<div class="dash-holder">
+
+    <!-- https://i.postimg.cc/dVGXVhgP/2-people-shaking-hands-for-business-purposes-generated-removebg-preview.png -->
+
+    <div class="Top-section">
+        <app-top-bar></app-top-bar>
+
+        <div class="top-det">
+            
+            <div class="stock-details">
+                <mat-icon>search</mat-icon>
+                <input id="search-box" #searchBox (input)="search(searchBox.value)" type="search" placeholder="Search..">
+            </div>
+
+            <div class="fil-sor">
+                <div class="filter-item">
+                    <mat-icon>sort</mat-icon>
+                    <select [(ngModel)]="selectedValue" (change)="onChange()">
+                        <option value="sale">Sale</option>
+                        <option value="A-Z">A-Z</option>
+                        <option value="Price-H">Price(High)</option>
+                        <option value="Price-L">Price(low)</option>
+                    </select>  
+                </div>
+            </div>
+        </div>
+        <mat-progress-bar *ngIf="blLoadComplete" mode="indeterminate"></mat-progress-bar>
+    </div>
+
+    <div *ngIf="products.length" class="holder">
+
+        <div class="item-holder">
+            <label class="lblHeaders">{{title | titlecase}}</label>
+        </div>
+        
+
+        <div class="item-holder">
+            <div class="products-div-ii">
+                
+                <div *ngFor="let product of products" class="menu-item4" routerLink="/product-details/{{product._id}}">
+                    <label *ngIf="product.quantity == 0" class="promo">Out of Stock</label>
+                    <div class="menu-item2">
+                        <img class="main-logo2" src="{{product.image}}">
+                
+                        <div class="prod-text">
+                            <label>{{product.title}}</label>
+                            <!-- <label>{{product.rating.rate}}</label> -->
+                            <div class="pr">
+                                
+                                <label *ngIf="!product.promo.onPromo" class="price">R{{product.price}}</label>
+                                <label *ngIf="product.promo.onPromo" class="price">R{{product.promo.newPrice}}</label>
+                                <label *ngIf="product.promo.onPromo" class="price">R{{product.price}}</label>
+                                <!-- <button (click)="mAddToCart()" type="button"><mat-icon>add_shopping_cart</mat-icon></button> -->
+                            </div>
+                            
+                        </div>
+                        <label *ngIf="product.promo.onPromo" class="promoLabel">Promotion!</label>
+                    </div>
+                    
+                </div>
+
+                <!-- <div *ngFor="let product of foundUsers$ | async" class="menu-item4" routerLink="/product-details/{{product.id}}">
+                    <label class="promo">Sale</label>
+                    <div class="menu-item2">
+
+                        <img class="main-logo2" src="{{product.image}}">
+                
+                        <div class="prod-text">
+                            <label>{{product.title}}</label>
+                            <div class="pr">
+                                <label class="price">R{{product.price}}</label>
+                                <button type="button"><mat-icon>add_shopping_cart</mat-icon></button>
+                            </div>
+                            
+                        </div>
+            
+                    </div>
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="!products.length" class="holder1">
+        
+            <img src="https://i.postimg.cc/t4jvtHq4/Package-box-brown-removebg-preview.png">
+    
+            <label>No products available</label>
+
+    </div>
+
+    <div class="tra">
+
+    </div> 
+
+    <div class="bottom-nav">
+
+        <div class="nav-options" >
+      
+            <div class="nav-item">
+                <button routerLink="/home"><mat-icon>store</mat-icon></button>
+                <label>Categories</label>
+            </div>
+      
+            <div class="nav-item">
+                <button routerLink="/track-order"><mat-icon>assignment</mat-icon></button>
+                <label>Orders</label>
+               
+            </div>
+      
+            <!-- <div class="nav-item">
+                <button routerLink="/home"><mat-icon>category</mat-icon></button>
+                
+            </div> -->
+      
+            <!-- <div class="nav-item">
+                <button><mat-icon>launch</mat-icon></button>
+                
+            </div> -->
+      
+            <div class="nav-item">
+                <button routerLink="/consumer-profile"><mat-icon>account_circle</mat-icon></button>
+                <label>Profile</label>
+                
+            </div>
+      
+            <div class="nav-item">
+              <button routerLink="/makasana"><mat-icon>logout</mat-icon></button>
+              <label>Logout</label>
+      
+          </div>
+      
+        </div>
+            
+      </div>
+
+    
+
+</div>
