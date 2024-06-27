@@ -196,7 +196,7 @@
 
   .nav-options .nav-item:nth-child(3),
   .nav-options .nav-item:nth-child(3) mat-icon{
-    color: blueviolet;
+    color: rgb(43, 226, 211);
   }
   .nav-item label{
     font-size: 11px;
@@ -442,7 +442,7 @@ gap: 10px;
 
 .nav-options .nav-item:nth-child(3),
 .nav-options .nav-item:nth-child(3) mat-icon{
-  color: blueviolet;
+  color: rgb(43, 226, 211);
 }
 .nav-item label{
   font-size: 11px;

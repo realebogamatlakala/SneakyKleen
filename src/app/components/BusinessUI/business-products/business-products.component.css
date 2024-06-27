@@ -19,7 +19,7 @@ mat-progress-bar{
 
 nav
 {
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 211);
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -329,7 +329,7 @@ nav
 
   .nav-options .nav-item:nth-child(3),
   .nav-options .nav-item:nth-child(3) mat-icon{
-    color: blueviolet;
+    color:rgb(43, 226, 211);
   }
   .nav-item label{
     font-size: 11px;
@@ -350,7 +350,7 @@ nav
 
     nav
     {
-        background-color: blueviolet;
+        background-color: rgb(43, 226, 211);
         border-radius: 10px;
         padding: 10px;
         display: flex;
@@ -660,7 +660,7 @@ nav
     
       .nav-options .nav-item:nth-child(3),
       .nav-options .nav-item:nth-child(3) mat-icon{
-        color: blueviolet;
+        color: rgb(43, 226, 211);
       }
       .nav-item label{
         font-size: 11px;

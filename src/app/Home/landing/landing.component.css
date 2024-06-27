@@ -8,7 +8,7 @@
 
 .home{
  
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 211);
     height: auto;
     width: 100%;
     border-radius: 0px 0px 0px 35px;
@@ -47,7 +47,7 @@
 .text-white2{
     font-size: 20px;
     font-weight: bold;
-    color: blueviolet;
+    color: rgb(43, 226, 211);
     /* text-align: center; */
     font-family: 'Montserrat', sans-serif;
     /* margin: 0; */
@@ -67,7 +67,7 @@
 .text-white3{
     font-size: 20px;
     font-weight: bold;
-    color: blueviolet;
+    color: rgb(43, 226, 211);
     /* color: white; */
     /* text-align: center; */
     font-family: 'Montserrat', sans-serif;
@@ -112,7 +112,7 @@ height: 100%;
     font-style: normal;
     font-size: 25px;
     font-weight: 600;
-    color: blueviolet;
+    color: rgb(43, 226, 211);
     margin: 0px;
     line-height: 0px;
     text-align: center;
@@ -125,7 +125,7 @@ height: 100%;
     padding: 10px 10px 0px 10px;
     font-size: 17px;
     font-weight: 500;
-    color: blueviolet;
+    color: rgb(43, 226, 211);
     margin: 0px;
     text-align: left;
     line-height: 25px;
@@ -140,7 +140,7 @@ a{
     padding-top: 22px;
     font-style: normal;
     font-size: 17px;
-    color: blueviolet;
+    color: rgb(43, 226, 211);
     margin: 0px;
     text-align: center;
     line-height: 25px;
@@ -172,7 +172,7 @@ em{
 }
 
 .tit{
-    color: blueviolet;
+    color:rgb(43, 226, 211);
     font-size: 20px;
     font-weight: bold;
     z-index: 1;
@@ -346,7 +346,7 @@ a{
 
 button{
     padding: 5px;
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 211);
     border-radius: 15px;
     color: white;
     font-weight: bold;
@@ -394,7 +394,7 @@ section{
     
     .home{
      
-        background-color: blueviolet;
+        background-color: rgb(43, 226, 211);
         height: auto;
         width: 100%;
         border-radius: 0px 0px 0px 35px;
@@ -427,7 +427,7 @@ section{
     .text-white2{
         font-size: 20px;
         font-weight: bold;
-        color: blueviolet;
+        color: rgb(43, 226, 211);
         /* text-align: center; */
         font-family: 'Montserrat', sans-serif;
         /* margin: 0; */
@@ -447,7 +447,7 @@ section{
     .text-white3{
         font-size: 20px;
         font-weight: bold;
-        color: blueviolet;
+        color: rgb(43, 226, 211);
         /* color: white; */
         /* text-align: center; */
         font-family: 'Montserrat', sans-serif;
@@ -479,7 +479,7 @@ section{
     
     img{
     width: 100%;
-    height: 100%;
+    height: 60%;
     }
     
     .slogan{
@@ -496,7 +496,7 @@ section{
         font-style: normal;
         font-size: 18px;
         font-weight: 600;
-        color: blueviolet;
+        color: rgb(43, 226, 211);
         margin: 0px;
         line-height: 30px;
     }
@@ -507,7 +507,7 @@ section{
         padding: 10px 10px 0px 10px;
         font-size: 17px;
         font-weight: 500;
-        color: blueviolet;
+        color:rgb(43, 226, 211);
         margin: 0px;
         text-align: left;
         line-height: 25px;
@@ -522,7 +522,7 @@ section{
         padding-top: 22px;
         font-style: normal;
         font-size: 17px;
-        color: blueviolet;
+        color: rgb(43, 226, 211);
         margin: 0px;
         text-align: center;
         line-height: 25px;
@@ -554,7 +554,7 @@ section{
     }
     
     .tit{
-        color: blueviolet;
+        color:rgb(43, 226, 211);
         font-size: 20px;
         font-weight: bold;
         z-index: 1;
@@ -729,7 +729,7 @@ section{
     
     button{
         padding: 5px;
-        background-color: blueviolet;
+        background-color:rgb(43, 226, 211);
         border-radius: 15px;
         color: white;
         font-weight: bold;
