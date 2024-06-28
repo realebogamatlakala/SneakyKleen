@@ -147,7 +147,7 @@
 
 .nav-options .nav-item:nth-child(2),
 .nav-options .nav-item:nth-child(2) mat-icon{
-  color: blueviolet;
+  color:rgb(43, 226, 211);
 }
 .nav-item label{
   font-size: 11px;

@@ -36,10 +36,22 @@
             </p>
               </div>
 
+              <div class="input-field">
+                <label>Drop Off and Pickup location:</label>
+                <select type="text" [(ngModel)]="productDetail.drop" placeholder="Drop off location">
+                    <option value="SR">Salt River</option>
+                    <option value="CPT" >Cape Town</option>
+                    <option value="MB">Mowbray</option>
+                    <option value="BLV" >Bellville</option>
+                    <option value="GUG">Gugulethu</option>
+                    <option value="KHA" >Khayelitsha</option>
+                </select>
+            </div>
+
         <div class="input-fieldD">
             <hr>
-            <label>Product Condition</label>
-            <p>New</p>
+            <label>Drop Off Location:</label>
+            <p>{{product.drop}}</p>
         </div>
 
         <div class="input-fieldD">

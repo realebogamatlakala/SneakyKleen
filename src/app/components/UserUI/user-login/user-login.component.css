@@ -11,10 +11,6 @@
     height: 100%;
 }
 
-.header{
-    
-}
-
 .header h1{
     font-weight: 600;
 }
@@ -35,7 +31,7 @@
 }
 
 .container{
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 211);
     border-top-right-radius: 80%;
     height: 170px;
     width: 80%;
@@ -53,7 +49,7 @@ img{
 
 .submit{
     margin-top: 10px;
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 211);
     height: 35px;
     width: 100%;
     color: white;

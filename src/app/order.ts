@@ -4,6 +4,7 @@ export interface Order {
     orderNumber: string;
     contactNumber: Number;
     price: Number;
+    drop: String;
     paymentMethod:string;
     orderStatus: string;
     date: Date;

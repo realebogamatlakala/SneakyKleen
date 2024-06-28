@@ -41,6 +41,7 @@ export class TrackOrderComponent implements OnInit{
         let prevOrderArray = ((this.PassMaporders.get(ode.orderNo) || []));
        
         prevOrder.quantity = (prevOrder.quantity + ode.quantity);
+        prevOrder.drop = (prevOrder.drop + ode.drop);
         prevOrder.Total = (prevOrder.Total + ode.price);
 
         prevOrderArray.push(ode)

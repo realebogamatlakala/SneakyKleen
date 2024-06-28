@@ -36,6 +36,7 @@ export class ViewAProductComponent implements OnInit {
     image: '',
     description: "",
     category: '',
+    drop:'',
     price: 0,
     condition: '',
     quantity: 0,

@@ -37,18 +37,15 @@ class="left" srcset="" height="30px" width="30px">
             <div class="input-field">
                 <label>Product Category:</label>
                 <select type="number" [(ngModel)]="productDetail.category" placeholder="Category">
-                    <option  value="furniture">Furniture</option>
-                    <option value="electronics">Electronics</option>
-                    <option  value="beauty_and_health">Beauty, health, personal, and household care</option>
-                    <option  value="clothing">Clothing and footwear</option>
-                    <option value="toys">Toys, hobby, and DIY</option>
-                    <option  value="food" >Food</option>
-                    <option  value="media">Media (books, disks and
-                        concert tickets)
+                    <option  value="furniture">Sneaker Cleaning</option>
+                    <option value="electronics">Couches and Carpets</option>
+                    <option  value="beauty_and_health">Car Seats</option>
+                    <option  value="clothing">Car Wash</option>
+                    <option value="toys">Sneaky Sneaker Products</option>
+                    <option  value="food" >Sneaky Couches & Carpets Products</option>
+                    <option  value="media">Sneaky Car Seat Products
                         </option>
-                    <option value="jewellery">Jewellery and clocks</option>
-                    <option value="pets">Pets</option>
-                    <option value="sports">Sports</option>
+                    <option value="jewellery">Sneaky Car Wash</option>
                 </select>
             </div>
 
@@ -59,6 +56,18 @@ class="left" srcset="" height="30px" width="30px">
                 <select type="text" [(ngModel)]="productDetail.condition" placeholder="Condition">
                     <option value="New">New</option>
                     <option value="Used" >Used</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <label>Drop Off and Pickup location:</label>
+                <select type="text" [(ngModel)]="productDetail.drop" placeholder="Drop off location">
+                    <option value="SR">Salt River</option>
+                    <option value="CPT" >Cape Town</option>
+                    <option value="MB">Mowbray</option>
+                    <option value="BLV" >Bellville</option>
+                    <option value="GUG">Gugulethu</option>
+                    <option value="KHA" >Khayelitsha</option>
                 </select>
             </div>
 
